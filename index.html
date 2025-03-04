@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INANCE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,12 +19,13 @@
         </h1>
 
         <nav>
-            <ul>
-                <li> <a href="#" class="home-link">Home</a> </li>
+            <ul class="nav-items">
+                <li> <a href="#home" class="home-link">Home</a> </li>
                 <li> <a href="#about"> About</a></li>
-                <li> <a href="#"> Services</a></li>
-                <li> <a href="#"> Contact Us</a></li>
+                <li> <a href="#services"> Services</a></li>
+                <li> <a href="#contact"> Contact Us</a></li>
             </ul>
+            <i class="fa-solid fa-bars nav-list"></i>
         </nav>
     </header>
 
@@ -32,7 +35,9 @@
                 Repair and Maintenance Services
             </h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem adipisci. Quos molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus soluta hic praesentium mollitia consequatur beatae, aspernatur culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem adipisci. Quos molestiae
+                saepe dicta nobis pariatur, tempora iusto, ad possimus soluta hic praesentium mollitia consequatur
+                beatae, aspernatur culpa.
             </p>
             <button>
                 CONTACT US
@@ -54,35 +59,120 @@
         <div class="offer">
             <i class="fa-solid fa-house"></i>
             <strong>
-                REPAIR
+                IMPROVE
             </strong>
         </div>
 
         <div class="offer">
-            <i class="fa-solid fa-pen"></i>
+            <i class="fa-solid fa-repair"></i>
             <strong>
-                REPAIR
+                MAINTAIN
             </strong>
         </div>
 
     </div>
 
     <section class="about" id="about">
-            <div>
-                <h2>
-                    About us
-                </h2>
-                <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised                </p>
-                <button>
-                    READ MORE
-                </button>
-            </div>
-    
-            <img src="./images/about-img.jpg" alt="">
+        <div>
+            <h2>
+                About us
+            </h2>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour, or randomisedThere are many variations of passages of Lorem
+                Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                randomised </p>
+            <button>
+                READ MORE
+            </button>
+        </div>
+
+        <img src="./images/about-img.jpg" alt="">
     </section>
 
+    <section id="more" class="more-about">
+        <img src="./images/professional-img.png" alt="">
+        <div class="info right">
+            <h2>
+                We Provide Professional Home Services. </h2>
+            <p>
+                randomised words which don't look even slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All
+                randomised words which don't look even slightly
+            </p>
+            <button>
+                CONTACT US
+            </button>
+        </div>
+    </section>
 
+    <section id="services" class="services">
+        <h2>
+            OUR SERVICES
+        </h2>
+        <div class="services-container">
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>
+                    Maintenance
+                </h3>
+                <p>
+                    when looking at its layout. The point of using Lorem Ipsum isthat it has a more-or-less normal
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-plug"></i>
+                <h3>
+                    Electrical
+                </h3>
+                <p>
+                    when looking at its layout. The point of using Lorem Ipsum isthat it has a more-or-less normal
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-sink"></i>
+                <h3>
+                    Plumbing
+                </h3>
+                <p>
+                    when looking at its layout. The point of using Lorem Ipsum isthat it has a more-or-less normal
+                </p>
+            </div>
+        </div>
+
+        <button>
+            VIEW MORE
+        </button>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>
+            CONTACT US
+        </h2>
+        <div class="contact-info">
+            <form>
+                <input type="text" placeholder="name">
+                <input type="tel" placeholder="phone number">
+                <input type="email" placeholder="email">
+                <input type="text" class="feedback" placeholder="message"></input>
+
+                <button type="submit" class="send-btn">
+                    SEND
+                </button>
+
+            </form>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7449432.25898415!2d48.654564292334705!3d24.262123124573222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e48dfb1ab12bd%3A0x33d32f56c0080aa7!2sUnited%20Arab%20Emirates!5e0!3m2!1sen!2seg!4v1741047399342!5m2!1sen!2seg"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; developed by Eng.Fatma Akram
+    </footer>
+
+    <script src="app.js"></script>
 
 </body>
 

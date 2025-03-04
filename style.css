@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     outline: none;
@@ -11,99 +11,117 @@
 
 }
 
-:root{
-    --blue:#007bff;
-    --light-blue:#d1e3ff;
-    --orange:#ff8a1d;
+:root {
+    --blue: #007bff;
+    --light-blue: #d1e3ff;
+    --orange: #ff8a1d;
+    --dark-blue: #0a0f43;
 
 }
 
-body{
+body {
     max-width: 100svw;
 
     height: 100svh;
     max-height: 100svh;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-
-
-header{
-    padding: 10px;
+header {
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--light-blue);
 }
 
-h1{
-    color: var(--blue) ;
+h1 {
+    color: var(--blue);
+    font-size: 1.5rem;
 }
 
-nav ul{
+.nav-list {
+    font-size: 24px;
+    color: var(--blue);
+    display: none;
+}
+
+
+
+nav ul {
     display: flex;
     gap: 10px;
 }
 
-nav ul li a{
+nav ul li a {
     color: black;
 }
 
-.home-link{
-    color:var(--blue);
+nav ul li a:hover {
+    color: var(--blue);
 }
 
-.hero{
+
+.home-link {
+    color: var(--blue);
+}
+
+.hero {
+    padding-top: 2%;
     background-color: var(--light-blue);
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
-.info{
+.info {
     width: 40%;
 }
 
-.info h2{
+.info h2 {
     color: var(--blue);
-    font-size: 2rem;
-    width: 35%;
+    font-size: 2.1rem;
+    width: 40%;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.info p{
-    margin-bottom: 15px;
+.info p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #4f4f4f;
 }
 
-.info button{
+.info button {
     background-color: var(--orange);
     border: 1px solid var(--orange);
     color: white;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    padding: 12px 40px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
-.info button:hover{
+.info button:hover {
 
-    background-color:transparent;
+    background-color: transparent;
     color: var(--orange);
 }
 
-.hero img{
-    height: 80svh;
+.hero img {
+    height: 90%;
+    padding: 10px;
 }
 
-.offers{
+.offers {
     min-height: 40vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +132,7 @@ nav ul li a{
     top: -20%;
 }
 
-.offer{
+.offer {
     height: 200px;
     width: 25%;
     display: flex;
@@ -131,87 +149,302 @@ nav ul li a{
     -o-transition: 0.5s;
 }
 
-.offer:nth-child(2){
+.offer:nth-child(2) {
     background-color: var(--orange);
     color: white;
 }
 
-.offer:hover{
+.offer:hover,
+.service:hover {
     background-color: var(--orange);
     color: white;
 }
 
-.offer i{
-    font-size:24px;
+.offer i {
+    font-size: 24px;
 }
 
 /* about section  */
-.about{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px;
-    padding:20px;
+    gap: 40px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto 10px;
+
+    top: -150px;
 }
 
-.about img{
-    width:50%
-}
-.about div h2{
-    margin-bottom: 15px;
+.about img {
+    width: 50%
 }
 
-.about div p{
-    margin-bottom: 15px;
+.about div h2 {
+    margin-bottom: 20px;
+    font-size: 1.9rem;
 }
 
-.about div button{
+.about div p {
+    margin-bottom: 20px;
+    color: #4f4f4f;
+}
+
+.about div button,
+.send-btn {
     background-color: var(--blue);
     border: 1px solid var(--blue);
     color: white;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.more-about {
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100svh;
+}
+
+.more-about img {
+    width: 47%;
+    height: 85%;
+}
+
+.more-about .right h2 {
+    width: auto;
+    font-size: 2rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    min-height: 80svh;
+}
+
+.services button {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: white;
+    font-weight: bold;
+    padding: 12px 40px;
+    border-radius: 2px;
+}
+
+.services button:hover,
+.send-btn:hover {
+    background-color: transparent;
+    color: var(--blue);
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 0px 7px rgb(150, 150, 150);
+    padding: 40px 15px;
+
+    max-width: 350px;
+
+    transition: background-color 0.5s, transform 0.5s;
+    -webkit-transition: background-color 0.5s, transform 0.5s;
+    -moz-transition: background-color 0.5s, transform 0.5s;
+    -ms-transition: background-color 0.5s, transform 0.5s;
+    -o-transition: background-color 0.5s, transform 0.5s;
+}
+
+.service i {
+    font-size: 40px;
+}
+
+.service p {
+    text-align: center;
+    color: #3d3d3d;
+}
+
+.service:hover p {
+    color: white;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 80svh;
+    padding: 10px 10px 40px 10px;
+}
+
+.contact h2 {
+    padding-left: 25px;
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-info form {
+    width: 40%;
+
+}
+
+.contact-info form input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: block;
+    box-shadow: 0px 0px 7px #ccc;
+    text-transform: capitalize;
+
+}
+
+.feedback {
+    height: 100px;
+}
+
+.send-btn {
+    width: 100px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+iframe {
+    width: 50%;
+    height: 400px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 20px;
+    text-align: center;
+
 }
 
 
+@media (max-width:1240px) {
+    .offers {
+        top: 0px;
+    }
 
-
-
-@media (max-width:1240px){
-    .offers{
+    .about {
         top: 0px;
     }
 }
 
-@media (max-width:768px){
-    
-    .info{
-        width: 70%;
-    }
-    .offers{
-        flex-direction: column;
-
-    }
-    .offer{
-        width: 80%;
-    }
-
-    .about{
-        flex-direction: column;
-    }
-
-    .about div{
-        width: 80%;
-    }
-
-    .about img{
-        width:80%
-    }
+.show{
+    display:flex;
 }
 
+@media (max-width:768px) {
+    nav ul {
+        flex-direction: column;
+        border-left: 1px solid var(--blue);
+        position: absolute;
+        gap: 10px ;
+        right: 10px;
+        top: 10px;
+        z-index: 1000;
 
+        padding: 10px 30px;
+        width: 150px;
+        
+        display: none;
+        transition: display 0.5s;
+        -webkit-transition: display 0.5s;
+        -moz-transition: display 0.5s;
+        -ms-transition: display 0.5s;
+        -o-transition: display 0.5s;
+
+        border-radius: 10px 0px 10px 10px;
+        -webkit-border-radius: 10px 0px 10px 10px;
+        -moz-border-radius: 10px 0px 10px 10px;
+        -ms-border-radius: 10px 0px 10px 10px;
+        -o-border-radius: 10px 0px 10px 10px;
+}
+
+    .nav-list {
+        display: block;
+    }
+
+    .hero img {
+        height: 30%;
+        width: 90%;
+    }
+
+    .info {
+        padding-top: 10px;
+        width: 70%;
+    }
+
+    .offers {
+        flex-direction: column;
+
+    }
+
+    .offer {
+        width: 80%;
+    }
+
+    .about {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about div {
+        width: 80%;
+    }
+
+    .about img {
+        width: 80%
+    }
+
+    .more-about {
+        height: 60svh;
+    }
+
+    .more-about img {
+        display: none;
+    }
+
+    .contact-info {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info form,
+    iframe {
+        width: 90%;
+    }
+}
