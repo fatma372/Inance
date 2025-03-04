@@ -368,6 +368,7 @@ footer {
 }
 
 @media (max-width:768px) {
+    
     nav ul {
         flex-direction: column;
         border-left: 1px solid var(--blue);
@@ -431,7 +432,7 @@ footer {
     }
 
     .more-about {
-        height: 60svh;
+        height: 90svh;
     }
 
     .more-about img {
